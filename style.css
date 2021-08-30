@@ -55,3 +55,15 @@ img {
   font-size: 15px;
   color: grey;
 }
+
+@media only screen and (max-width: 1999px) {
+  .album-element {
+    max-width: calc(100% / 4 - 20px);
+  }
+  .album-element:nth-of-type(4n + 4) {
+    margin-right: 0;
+  }
+  .album-element:nth-of-type(5n + 5) {
+    margin-right: 25px;
+  }
+}
