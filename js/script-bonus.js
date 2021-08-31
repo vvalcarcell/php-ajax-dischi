@@ -8,7 +8,7 @@ new Vue(
         },
         created() {
 
-            axios.get('http://localhost:8888/php-ajax-dischi-1/API/apiFilter.php')
+            axios.get('http://localhost:8888/php-ajax-dischi-1/API/apiFilter.php?genre=Pop')
                 .then((response) => {
                     this.discs = response.data;
                     // console.log(response);

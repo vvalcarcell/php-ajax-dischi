@@ -3,17 +3,11 @@
 
     $genreType=$_GET["genre"];
 
-    // $filterDB = function ($item) use ($genreType) {
-    //     return $item["genre"] === $genreType;
-    // };
-
-    // $dbFiltered= array_filter($database, $filterDB);
-
-    $dbFiltered= array_filter($database, function ($item) use ($genreType) {
+    $filterDB = function ($item) use ($genreType) {
         return $item["genre"] === $genreType;
-    });
+    };
 
-    var_dump($dbFiltered);
+    $dbFiltered= array_filter($database, $filterDB);
 
     header('Content-Type: application/json');
     echo json_encode($dbFiltered);
