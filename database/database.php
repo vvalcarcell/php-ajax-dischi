@@ -18,6 +18,7 @@
         [
             'title' => 'Ten\'s Summoner\'s Tales',
             'author' => 'Sting',
+            "genre"=> "Rock",
             'year' => 1993,
             'poster' => 'https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg'
         ],
